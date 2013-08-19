@@ -35,4 +35,4 @@ include_directories (BEFORE
                         ${CMAKE_FIND_ROOT_PATH}/include 
                         /opt/freescale/linux-2.6.35.3/include 
                         ${ONYX_MWO_ROOT}/include/SDL)
-#link_directories    (${QT_LIBRARY_DIR})
+link_directories    (${QT_LIBRARY_DIR})
