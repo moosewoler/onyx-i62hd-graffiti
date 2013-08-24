@@ -5,9 +5,11 @@
 
 #include "onyx/ui/ui.h"
 #include "onyx/ui/ui_utils.h"
-#include "onyx/ui/status_bar.h"
-#include "onyx/data/sketch_proxy.h"
+//#include "onyx/ui/status_bar.h"
+//#include "onyx/data/sketch_proxy.h"
 #include "onyx/screen/screen_proxy.h"
+
+#include "mwolib/graffiti_hui.h"
 
 using namespace ui;
 
@@ -23,18 +25,19 @@ class MwoMainwindow : public QWidget
         bool start();
         bool stop();
 
-        void attachSketchProxy(sketch::SketchProxy *proxy);
-        void deattachSketchProxy();
-        void updateSketchProxy();
+        //void attachSketchProxy(sketch::SketchProxy *proxy);
+        //void deattachSketchProxy();
+        //void updateSketchProxy();
 
     protected:
-        virtual void paintEvent(QPaintEvent* pe);
-        virtual bool event(QEvent *e);
+        //virtual void paintEvent(QPaintEvent* pe);
+        //virtual bool event(QEvent *e);
 
         //private Q_SLOTS:
 
     private:
-        scoped_ptr<sketch::SketchProxy> sketch_proxy_;
+        //scoped_ptr<sketch::SketchProxy> sketch_proxy_;
+        scoped_ptr<graffiti::TGraffitiHUI> graffiti_hui;
 };
 
 #endif

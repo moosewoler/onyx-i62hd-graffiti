@@ -1,10 +1,10 @@
 ENABLE_QT()
 
-#include_directories(AFTER "gnuboy")
-#add_subdirectory(gnuboy)
+include_directories(AFTER "mwolib")
+add_subdirectory(mwolib)
 
-file(GLOB_RECURSE HDRS *.h)
-file(GLOB_RECURSE SRCS *.cpp *.c)
+file(GLOB HDRS *.h)
+file(GLOB SRCS *.cpp *.c)
 set (SRCS ${HDRS} ${SRCS})
 
 # TODO: put QT Moc files here.
@@ -23,4 +23,5 @@ target_link_libraries(${OUTPUT_NAME}.oar
    onyx_ui
    ${QT_LIBRARIES}
    ${ADD_LIB}
+   mwo
 )
