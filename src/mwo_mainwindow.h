@@ -20,23 +20,10 @@ class MwoMainwindow : public QWidget
     public:
         MwoMainwindow(QWidget *parent = 0);
         ~MwoMainwindow();
-
     public:
         bool start();
         bool stop();
-
-        //void attachSketchProxy(sketch::SketchProxy *proxy);
-        //void deattachSketchProxy();
-        //void updateSketchProxy();
-
-    protected:
-        //virtual void paintEvent(QPaintEvent* pe);
-        //virtual bool event(QEvent *e);
-
-        //private Q_SLOTS:
-
     private:
-        //scoped_ptr<sketch::SketchProxy> sketch_proxy_;
         scoped_ptr<graffiti::TGraffitiHUI> graffiti_hui;
 };
 

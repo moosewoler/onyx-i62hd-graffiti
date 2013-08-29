@@ -1,17 +1,11 @@
 #include <QtGui/QtGui>
 #include <QScreen>
 
-#include "onyx/screen/screen_update_watcher.h"
-#include "onyx/ui/screen_rotation_dialog.h"
 #include "onyx/sys/sys.h"
-
 #include "onyx/screen/screen_proxy.h"
-//#include "onyx/data/sketch_proxy.h"
+#include "onyx/screen/screen_update_watcher.h"
 
-//#include "mwolib/graffiti_hui.h"
 #include "mwo_mainwindow.h"
-
-//#include <sys/time.h>
 
 static const QString TEST_SKETCH_PATH = "test_sketch";
 
